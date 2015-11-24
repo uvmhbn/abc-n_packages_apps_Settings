@@ -107,4 +107,10 @@
     <string name="remove_tile_summaries_summary_disabled">Dashboard summaries are disabled</string>
     <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
     <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
 </resources>
