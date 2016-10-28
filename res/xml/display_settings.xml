@@ -89,6 +89,11 @@
                 android:title="@string/tap_to_wake"
                 android:summary="@string/tap_to_wake_summary" />
 
+    	<PreferenceScreen
+        	android:key="expanded_desktop"
+        	android:title="@string/power_menu_expanded_desktop"
+        	android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+	
         <PreferenceCategory
                 android:key="dashboard_category"
                 android:title="@string/dashboard_category">
