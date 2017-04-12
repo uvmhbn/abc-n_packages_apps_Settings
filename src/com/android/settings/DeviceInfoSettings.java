@@ -371,10 +371,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         final String PROC_VERSION_REGEX =
             "Linux version (\\S+) " + /* group 1: "3.0.31-g6fb96c9" */
             "\\((\\S+?)\\) " +        /* group 2: "x@y.com" (kernel builder) */
-            "(?:\\(gcc.+? \\)) " +    /* ignore: GCC version information */
-            "(#\\d+) " +              /* group 3: "#1" */
+            "(\\(gcc.+? \\)) " +      /* group 3: GCC version information */
+            "(#\\d+) " +              /* group 4: "#1" */
             "(?:.*?)?" +              /* ignore: optional SMP, PREEMPT, and any CONFIG_FLAGS */
-            "((Sun|Mon|Tue|Wed|Thu|Fri|Sat).+)"; /* group 4: "Thu Jun 28 11:02:39 PDT 2012" */
+            "((Sun|Mon|Tue|Wed|Thu|Fri|Sat).+)"; /* group 5: "Thu Jun 28 11:02:39 PDT 2012" */
 
         Matcher m = Pattern.compile(PROC_VERSION_REGEX).matcher(rawKernelVersion);
         if (!m.matches()) {
@@ -386,8 +386,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             return "Unavailable";
         }
         return m.group(1) + "\n" +                 // 3.0.31-g6fb96c9
-            m.group(2) + " " + m.group(3) + "\n" + // x@y.com #1
-            m.group(4);                            // Thu Jun 28 11:02:39 PDT 2012
+            m.group(2) + " " + m.group(4) + "\n" + // x@y.com #1
+            m.group(3) + "\n" +                    // GCC version information
+            m.group(5);                            // Thu Jun 28 11:02:39 PDT 2012
     }
 
     private static class SummaryProvider implements SummaryLoader.SummaryProvider {
