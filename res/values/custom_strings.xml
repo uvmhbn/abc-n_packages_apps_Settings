@@ -96,9 +96,9 @@
     <string name="night_brightness_value_title">Night Light brightness</string>
     <string name="night_brightness_text">When Night Light is enabled automatically set the desired brightness. The default brightness is set to low brightness</string>
     <string name="night_bright_disabled">Disabled</string>
-    <string name="night_bright_low">low brightness</string>
-    <string name="night_bright_medium">medium brightness</string>
-    <string name="night_bright_min">minimum brightness</string>
+    <string name="night_bright_low">Low brightness</string>
+    <string name="night_bright_medium">Medium brightness</string>
+    <string name="night_bright_min">Minimum brightness</string>
 
     <!-- Dashboard options -->
     <string name="dashboard_category">Dashboard options</string>
@@ -206,4 +206,12 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 	
+    <!-- Ambient Display Brightness -->
+    <string name="ambient_doze_custom_brightness_title">Ambient and LiftToWake brightness</string>
+    <string name="ambient_doze_auto_brightness_title">Ambient and LiftToWake auto brightness</string>
+    <string name="ambient_doze_auto_brightness_summary">Use last screen-on brightness value for Ambient Display or Lift to Wake screen</string>
+
+    <!-- Fingerprint Quick Pulldown -->
+    <string name="quick_pulldown_fp_title">Fingerprint quick pulldown</string>
+    <string name="quick_pulldown_fp_summary">Enable expanding the Quick Settings with only one swipe on the fingerprint sensor</string>
 </resources>
