@@ -46,12 +46,20 @@
     </string-array>
 
     <string-array name="night_brightness_value_values" translatable="false">
-        <item>3</item>
-        <item>2</item>
         <item>0</item>
         <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 
+    <!-- Fingerprint swipe gestures on incoming call  -->
+    <string-array name="fp_swipe_call_actions_entries">
+        <item>@string/fp_swipe_call_actions_disabled</item>
+        <item>@string/fp_swipe_call_actions_updown_answer_call</item>
+        <item>@string/fp_swipe_call_actions_up_answer_down_silence</item>
+    </string-array>
+
+<<<<<<< HEAD
     <!-- Names of categories of app ops tabs -->
     <string-array name="app_ops_categories_custom" translatable="false">
         <item>@string/app_ops_cat_location</item>
@@ -205,5 +213,12 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <string-array name="fp_swipe_call_actions_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 
 </resources>
