@@ -59,7 +59,6 @@
         <item>@string/fp_swipe_call_actions_up_answer_down_silence</item>
     </string-array>
 
-<<<<<<< HEAD
     <!-- Names of categories of app ops tabs -->
     <string-array name="app_ops_categories_custom" translatable="false">
         <item>@string/app_ops_cat_location</item>
